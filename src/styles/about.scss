@@ -1,9 +1,20 @@
 section.about-us {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  @include mobile-down {
+    grid-template-columns: 1fr;
+  }
 }
 .about-block {
   color: $dg-blue;
+  img {
+    width: 100%;
+  }
+  &.two {
+    @include mobile-down {
+      order:-1;
+    }
+  }
   &.one,
   &.four,
   &.five,
@@ -68,7 +79,6 @@ section.about-us {
     justify-content: stretch;
     align-items: stretch;
     > div {
-      background-color: purple;
     }
     > .image {
       grid-column: 1 / 3;
@@ -86,6 +96,7 @@ section.about-us {
       @include padding-block(2rem);
       h4 {
         @include font-fraunces;
+        font-weight: 900;
         color: $vdg-blue;
       }
       p {
