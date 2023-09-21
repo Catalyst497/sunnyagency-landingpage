@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+// Variables and mixins
+$soft-red:  hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$desat-cyan: hsl(167, 40%, 24%);
+$dark-blue:  hsl(198, 62%, 26%);
+$moderate-cyan: hsl(168, 34%, 41%);
+$desat-blue: hsl(212, 27%, 19%);
+$vdg-blue:  hsl(213, 9%, 39%);
+$dg-blue: hsl(232, 10%, 55%);
+$grayish-blue:  hsl(210, 4%, 67%);
+
+@mixin padding-inline ($val) {
+    padding-left: $val;
+    padding-right: $val;
+}
+@mixin padding-block ($val) {
+    padding-top: $val;
+    padding-bottom: $val;
+}
+@mixin margin-inline ($val) {
+    margin-left: $val;
+    margin-right: $val;
+}
+@mixin margin-block ($val) {
+    margin-top: $val;
+    margin-bottom: $val;
+}
+@mixin font-fraunces {
+    font-family: 'Fraunces', serif;
+}
+@mixin mobile-up {
+    @media (min-width: 375px) {
+        @content;
+    }
+}
+@mixin mobile-down {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+// @mixin desktop-up
+
+//Boilerplate styles
+html {
+    font-size: 18px;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    border: none;
+}
+body {
+    font-family: 'Barlow', sans-serif;
+}
+img {
+    max-width: 100%;
+}
+// Barlow
+// font-family: 'Barlow', sans-serif;
+// Fraunces
+// font-family: 'Fraunces', serif;
+
+
+// Imports
+@import 'landing.scss';
+@import 'about.scss';
