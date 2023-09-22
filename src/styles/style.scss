@@ -31,12 +31,12 @@ $grayish-blue:  hsl(210, 4%, 67%);
     font-family: 'Fraunces', serif;
 }
 @mixin mobile-up {
-    @media (min-width: 375px) {
+    @media (min-width: 500px) {
         @content;
     }
 }
 @mixin mobile-down {
-    @media (max-width: 375px) {
+    @media (max-width: 500px) {
         @content;
     }
 }

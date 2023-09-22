@@ -12,7 +12,7 @@ section.about-us {
   }
   &.two {
     @include mobile-down {
-      order:-1;
+      order: -1;
     }
   }
   &.one,
@@ -30,7 +30,7 @@ section.about-us {
       max-width: 70%;
       @include mobile-down {
         max-width: 80%;
-        @include margin-block (20vw);
+        @include margin-block(20vw);
       }
     }
     h3 {
@@ -69,7 +69,6 @@ section.about-us {
         border-radius: 0.3rem;
         margin-top: -0.65rem;
       }
-     
     }
   }
   &.five,
@@ -78,8 +77,6 @@ section.about-us {
     grid-template-columns: 1fr 1fr;
     justify-content: stretch;
     align-items: stretch;
-    > div {
-    }
     > .image {
       grid-column: 1 / 3;
       grid-row: 1 / 3;
@@ -93,7 +90,11 @@ section.about-us {
       align-items: end;
       justify-content: center;
       text-align: center;
+      color: $vdg-blue;
       @include padding-block(2rem);
+      @include mobile-down {
+        @include padding-block(0);
+      }
       h4 {
         @include font-fraunces;
         font-weight: 900;
@@ -101,8 +102,10 @@ section.about-us {
       }
       p {
         @include padding-inline(5rem);
+        @include mobile-down() {
+          @include padding-inline (1rem);
+        }
       }
     }
   }
-  
 }
