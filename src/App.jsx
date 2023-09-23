@@ -4,7 +4,7 @@ import About from './components/About';
 
 function App() {
   const [count, setCount] = useState(0)
-  useEffectf
+  
 
   return (
     <>
