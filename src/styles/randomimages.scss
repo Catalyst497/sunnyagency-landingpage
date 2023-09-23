@@ -1,0 +1,10 @@
+section.random-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include mobile-down {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img {
+        width: 100%;
+    }
+}
