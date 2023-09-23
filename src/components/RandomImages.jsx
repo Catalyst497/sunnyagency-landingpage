@@ -2,7 +2,7 @@ import React from "react";
 
 function RandomImages() {
   return (
-    <section className="random-images">
+    <section id = "projects" className="random-images">
       <div className="image">
         <img
           src="./images/desktop/image-gallery-milkbottles.jpg"

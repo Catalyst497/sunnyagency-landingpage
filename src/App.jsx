@@ -5,9 +5,9 @@ import Testimonials from "./components/Testimonials";
 import RandomImages from "./components/RandomImages";
 import Footer from "./components/Footer";
 
-function App() {
 
-  const [count, setCount] = useState(0);
+function App() {
+  
   const Breakpoints = () => {
     const [width, setWidth] = useState(window.innerWidth);
     useEffect(() => {
@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Landing isMobile={isMobile} />
-      <About />
+      <About  />
       <Testimonials />
       <RandomImages />
       <Footer />
@@ -31,7 +31,7 @@ function App() {
         <a href="https://github.com/Catalyst497" target="_blank">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Daniel Duyilemi</a>.
+        . Coded by <a href="#">Daniel Duyilemi and Ebunski</a>.
       </div>
     </>
   );
