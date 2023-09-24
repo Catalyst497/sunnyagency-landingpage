@@ -28,10 +28,10 @@ function App() {
       <Footer />
       <div className="attribution" style={{textAlign: "center"}}>
         Challenge by{" "}
-        <a href="https://github.com/Catalyst497" target="_blank">
+        <a href="https://frontendmentor.io/" target="_blank">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Daniel Duyilemi and Ebunski</a>.
+        . Coded by <a href="https://github.com/Catalyst497">Daniel Duyilemi</a> and <a href="https://github.com/Ebunski">Ebunski</a>.
       </div>
     </>
   );

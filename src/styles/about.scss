@@ -8,7 +8,9 @@ section.about-us {
 .about-block {
   color: $dg-blue;
   img {
-    width: 100%;
+    min-width: 100%;
+   object-fit: cover;
+   min-height: 100%;
   }
   &.two {
     @include mobile-down {
@@ -31,6 +33,10 @@ section.about-us {
       @include mobile-down {
         max-width: 80%;
         @include margin-block(20vw);
+      }
+      @include tablet {
+        max-width: 80%;
+        @include margin-block(3rem);
       }
     }
     h3 {
@@ -95,6 +101,9 @@ section.about-us {
       @include mobile-down {
         @include padding-block(0);
       }
+      @include tablet {
+        @include padding-block(1rem);
+      }
       h4 {
         @include font-fraunces;
         font-weight: 900;
@@ -102,6 +111,9 @@ section.about-us {
       }
       p {
         @include padding-inline(5rem);
+        @include tablet {
+          @include padding-inline(1rem);
+        }
         @include mobile-down() {
           @include padding-inline (1rem);
         }
