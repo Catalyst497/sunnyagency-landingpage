@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <section className='footer'>
+    <section className='footer' id = "footer">
       <div>
         <img src="./images/logo-footer.svg" alt="Logo" className="logo" />
       </div>

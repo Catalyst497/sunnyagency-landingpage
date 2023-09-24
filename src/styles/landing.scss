@@ -28,7 +28,52 @@ section.landing {
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      width: 35%;
+      gap: 2rem;
+
+     &.mobile{
+       position:absolute;
+       align-self: center;
+       justify-self: center;
+       top: 7rem;
+       flex-direction: column;
+       background: white;
+       width: 80%;
+       padding-block: 2.5rem;
+       z-index: 3;
+       opacity: 0;
+       pointer-events: none;
+       transform: scale(0);
+       transform-origin: top right;
+       transition: all 0.3s ease-in-out;
+      &.show{
+       opacity: 1;
+       transform: scale(1);
+       pointer-events: auto;
+       
+     }
+       &::before{
+         position: absolute;
+         content: '';
+         background: white;
+         inset: 0;
+         top: -10%;
+         height: 10%;
+         clip-path: 
+         polygon(100% 0%, 100% 100%, 90% 100%)
+       }
+       
+       a{
+       color: $dg-blue;
+       &.white-bg{
+         background-color: $yellow;
+       }
+       }
+       
+       
+       
+     }
+     
+     
 
       > a {
         color: white;
